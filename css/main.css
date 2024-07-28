@@ -1,0 +1,476 @@
+/* Start Global Rules */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+/* End Global Rules */
+
+/* Start Header */
+.header {
+  background: url(../imgs/header.jpg) no-repeat top center;
+  background-size: cover;
+  min-height: 500px;
+  position: relative;
+}
+.header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-color: rgba(0, 168, 255, 0.5);
+}
+.header .overlay h1 {
+  font-size: 60px;
+  margin-top: 100px;
+}
+.header .overlay .plan {
+  border: 4px solid #fff;
+  font-size: 24px;
+  width: 48%;
+  padding: 20px;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
+.header .overlay .order {
+  border: 4px solid #fff;
+  font-size: 24px;
+  padding: 20px;
+  margin: 30px 1% 0;
+}
+/* Custom media no found on framework*/
+@media (max-width: 420px) {
+  .header .overlay h1 {
+    margin-top: 30px !important;
+    font-size: 50px !important;
+  }
+  .header .overlay .plan {
+    float: none;
+    margin: 0 auto 20px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header .overlay .plan {
+    float: none;
+    margin: 0 auto 20px;
+    font-size: 22px;
+  }
+}
+/* End Header */
+
+/* Start Features */
+.features {
+  padding: 30px 0;
+}
+.features .h1 {
+  font-size: 50px;
+  color: #555;
+}
+.features .feat {
+  width: calc(100% / 3);
+  color: #555;
+  padding: 0 20px 0 0;
+}
+.features .feat h2 {
+  margin: 10px 0 8px;
+}
+
+.features .feat p {
+  line-height: 1.6;
+  margin: 0;
+}
+@media (max-width: 992px) {
+  .features .feat {
+    width: calc(100% / 2);
+    padding: 0 20px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .features .feat {
+    width: 100%;
+  }
+  .features .feat h2 {
+    text-align: center;
+    margin: 20px 0 10px;
+  }
+  .features .feat p {
+    text-align: center;
+  }
+}
+/* End Features */
+
+/* Start About As */
+.about-us {
+  background-color: #ececec;
+  padding: 30px 0;
+}
+.about-us .h1 {
+  font-size: 50px;
+  color: #848484;
+}
+.responsive-paragraph {
+  color: #848484;
+}
+/* End About As */
+
+/* Start Our Works */
+
+.our-works {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .our-works .image {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .our-works .image {
+    width: calc(100% / 2);
+  }
+}
+
+@media (min-width: 992px) {
+  .our-works .image {
+    width: calc(100% / 3);
+  }
+}
+
+@media (min-width: 1200px) {
+  .our-works .image {
+    width: calc(100% / 4);
+  }
+}
+
+/* End Our Works */
+
+/* Start Pricing Table */
+.pricing-table {
+  background-color: #444;
+  color: #fff;
+  padding: 50px;
+}
+.pricing-table .h1 {
+  margin: 0 0 40px;
+  font-size: 50px;
+}
+.pricing-table .pricing-plan {
+  border: 3px solid #fff;
+  padding: 20px 0;
+  position: relative;
+}
+.pricing-table .pricing-plan h3 {
+  margin: 0 0 10px;
+  font-size: 26px;
+}
+.pricing-table .pricing-plan .pricing {
+  display: inline-block;
+  margin: 0 0 10px;
+  font-size: 22px;
+  color: #bfbfbf;
+}
+.pricing-table .pricing-plan ul {
+  line-height: 2;
+  font-size: 18px;
+}
+
+@media (max-width: 767px) {
+  .pricing-table .pricing-plan {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .pricing-table .pricing-plan {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .pricing-table .pricing-plan:not(.ultimate) {
+    margin-right: 1%;
+  }
+  .pricing-table .pricing-plan {
+    width: calc((100% - 2%) / 3);
+  }
+  .pricing-table .pricing-plan.plus {
+    left: calc((100% + 1%) / 3);
+  }
+  .pricing-table .pricing-plan.premium {
+    right: calc((100% + 1%) / 3);
+  }
+}
+
+/* End Pricing Table */
+
+/* Start What They Say */
+.they-say {
+  padding: 50px 0;
+}
+.they-say .h1 {
+  font-size: 50px;
+  margin: 0 0 30px;
+  color: #555;
+}
+.they-say .person-say {
+  background-color: #eee;
+  padding: 20px;
+  margin: 0 0 25px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+.they-say .person-say .image {
+  width: 100px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.they-say .person-say .image img {
+  border-radius: 10px;
+}
+.they-say .person-say .image img {
+  border-radius: 10px;
+}
+.they-say .person-say h3 {
+  margin: 5px 0 10px;
+}
+.they-say .person-say p {
+  margin: 0;
+  line-height: 1.7;
+  width: calc(100% - 120px);
+}
+
+@media (max-width: 767px) {
+  .they-say .person-say .image {
+    float: none;
+    margin: auto;
+  }
+  .they-say .person-say h3 {
+    float: none;
+    text-align: center;
+  }
+  .they-say .person-say p {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .they-say .person-say:first-of-type {
+    width: 100%;
+  }
+  .they-say .person-say:not(:first-of-type) {
+    width: calc(50% - 10px);
+  }
+  /* .they-say .person-say:last-of-type {
+    margin-left: 20px;
+  } */
+  .they-say .person-say:nth-of-type(2) {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .they-say .person-say:not(:first-of-type) .image {
+    float: none;
+    margin: auto;
+  }
+  .they-say .person-say:not(:first-of-type) h3 {
+    float: none;
+    text-align: center;
+  }
+  .they-say .person-say:not(:first-of-type) p {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .they-say .person-say:first-of-type {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+
+/* End What They Say */
+
+/* Start Information */
+.information {
+  background-color: #ececec;
+  padding: 30px 0;
+  font-size: 18px;
+}
+.information .h1 {
+  font-size: 50px;
+  color: #848484;
+}
+.information .info-list li {
+  display: inline-block;
+  background-color: #ddd;
+  padding: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+.information .info-content {
+  margin-bottom: 30px;
+}
+.information .info-content > div {
+  padding: 20px;
+  background-color: #fff;
+  line-height: 1.7;
+}
+.information .info-list li.active {
+  background-color: #fff;
+  font-weight: bold;
+}
+.information .info-content > div:not(:first-child) {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .information .info-list li {
+    display: block;
+  }
+}
+
+/* End Information */
+
+/* Start Footer */
+.footer {
+  background-color: #333;
+  color: #eee;
+}
+.footer .copyright,
+.footer .design {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .footer .copyright,
+  .footer .design {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer .copyright,
+  .footer .design {
+    width: 50%;
+  }
+}
+
+/* End Footer */
+
+/* Start My Framework */
+.container {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.text-center {
+  text-align: center;
+}
+.clearfix {
+  clear: both;
+}
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+  display: none;
+}
+.float-L {
+  float: left;
+}
+.float-R {
+  float: right;
+}
+.h1 {
+  font-size: 2em;
+}
+.responsive-paragraph {
+  line-height: 1.8;
+  font-size: 22px;
+}
+.responsive-image {
+  width: 100%;
+}
+.classic-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.img-cricle {
+  border-radius: 50%;
+}
+.img-thumbnail {
+  padding: 3px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+/* End My Framework */
+
+/* Start Grid System */
+/* Small Devices => Landscape Phones */
+@media (max-width: 767px) {
+  .visible-xs {
+    display: block !important;
+  }
+  .hidden-xs {
+    display: none !important;
+  }
+  .responsive-paragraph {
+    text-align: center;
+    font-size: 20px !important;
+  }
+}
+
+/* Medium Devices => Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 750px;
+  }
+  .visible-sm {
+    display: block !important;
+  }
+  .hidden-sm {
+    display: none !important;
+  }
+}
+
+/* Desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 970px;
+  }
+  .visible-md {
+    display: block !important;
+  }
+  .hidden-md {
+    display: none !important;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1070px;
+  }
+  .visible-lg {
+    display: block !important;
+  }
+  .hidden-lg {
+    display: none !important;
+  }
+}
+/* End Grid System */
